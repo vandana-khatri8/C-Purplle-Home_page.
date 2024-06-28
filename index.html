@@ -15,18 +15,10 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-
+  <script src="scipt.js"></script>
   
-
-
- 
-
-  /* img{display: block;margin: auto;cursor:pointer;background-color: hsl(0, 0%, 90%);
-transition: background-color 300ms;} */
-  </style>
     </head>
-    <body> 
+    <body >
         <!-- wrapper container div -->
         <div class="container-body">
 <!-- HEADER SECTION -->
@@ -60,9 +52,9 @@ transition: background-color 300ms;} */
     <!-- Just an image -->
 <nav class="navbar navbar-light bg-light img-brand-container">
     <a class="index.html" href="#">
-      <img src="https://ibb.co/sq00T0X" width="110" height="60"  alt="brand-logo">
+      <img src="pngwing.com.png" width="110" height="60"  alt="brand-logo">
     </a>
-    <a href="#"><img src="https://ibb.co/S7x61dB" alt="elit" border="0" /></a>
+    <a href="#"><img src="images/elit.jpg" alt="elit"  /></a>
   </nav>
 </div>
 
@@ -72,15 +64,17 @@ transition: background-color 300ms;} */
 
 <!-- icon div -->
 <div class="icon-wrapper">
-<div class="icon-btn"><ul>
+<div class="icon-btn">
+  <ul>
    <a href=""> <li><i class="ri-heart-3-line"></i></li> </a>
    <a href=""> <li><i class="ri-shopping-cart-2-line"></i></li> </a>
    <a href=""> <li><i class="ri-user-smile-line"></i></li> </a>
-   
+ <button  class="btn btn-outline-light text-dark "  onclick ="changeMode()"><li><i class="ri-sun-fill" ></i></li></button>
 </ul>
 </div>
 
 </div>
+
 <!-- icon div3 close -->
  </div>
 
@@ -89,7 +83,7 @@ transition: background-color 300ms;} */
     <div class=" second-section nav-category ">
         
       
-        <div class="SHOP-CATEGORIES nav-2  ">
+        <div class="SHOP-CATEGORIES nav-2   ">
         
              <a href="" > <i class="ri-menu-5-line"></i>SHOP-CATEGORIES</a>
             </div>
@@ -208,7 +202,7 @@ transition: background-color 300ms;} */
           
 </div>
        <!-- 1menu ends -->
-        <div class="OFFERS nav-2 item">
+        <div class="Brands nav-2 item">
             <a href="#">Brands</a>
             <div class="mega-menu menu-Brands d-none">
               <div class="box">
@@ -277,6 +271,27 @@ transition: background-color 300ms;} */
         <div class="ELITE-OFFERS nav-2">
             <a href="#">ELITE-OFFERS</a>
         </div>
+        <div class="OFFERS nav-2 " id="cupon">
+          <div class="heading-cupon p-0">
+           <span class="header-cupon"><strong>Cupon</strong></span>
+            <button class="btn btn-danger close-cupon" type="button" onclick="closeCupon()">&times;</button>
+          </div>
+         <div class="cupon-description d-flex">
+          
+          <div class="copan-pera-div m-2">
+           <p class="cupon-pera"><strong>Buy 3 & get 10% additional discount</strong></p>
+          </div>
+          <div class="copan-pera-div m-2">
+           <p class="cupon-pera"><strong>get 15% discount on above 1555</strong></p>
+          </div>
+          <div class="copan-pera-div m-2">
+           <p class="cupon-pera"><strong>on above 4000 get flat 25%</strong></p>
+          </div>
+               
+         </div>
+          
+         
+         </div>
 
 
 
@@ -293,7 +308,7 @@ transition: background-color 300ms;} */
 
 
 <!-- SLIDER IMAGES BEGIN  -->
-<div class="slideImage">
+<div class="slideImage" id="slider">
 
 
 
@@ -316,34 +331,34 @@ transition: background-color 300ms;} */
 <!-- slide show -->
 <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://ibb.co/k9bkXnV" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg1.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item">
-      <img src="https://ibb.co/NSwXXhF" alt="sliderImage" width="500px" height="400px">
+      <img src="images/sliderImg2.jpg" alt="sliderImage" width="500px" height="400px">
     </div>
     <div class="carousel-item">
-      <img src="https://ibb.co/dLbbNfB" alt="sliderImage" width="500px" height="400px">
+      <img src="images/sliderImg3.jpg" alt="sliderImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/99ZFj6B" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg4.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/kX1B3mq" alt="slideImage" width="500px height="400px">
+      <img src="images/sliderImg5.jpg" alt="slideImage" width="500px height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/30WNQG7" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg6.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/gdV90L0" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg7.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/4f20469" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg8.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/Pgmt115" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg9.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/2sLMDsf" alt="slideImage" width="500px" height="400px">
+      <img src="images/sliderImg10.jpg" alt="slideImage" width="500px" height="400px">
     </div>
   </div>
   
@@ -366,7 +381,7 @@ transition: background-color 300ms;} */
 <div class="newarrival-wrapper">
 
     <div class="new-arrival">
-        <a href="#"><img src="https://ibb.co/DK6rPhP" alt="new-arrival-page"></a>
+        <a href="#"><img src="images/newarrival.jpg" alt="new-arrival-page"></a>
     </div>
 </div>
 <!-- newarrival close -->
@@ -438,7 +453,7 @@ transition: background-color 300ms;} */
 
         <li>
           <div class="item-detail"><div class="item-detail"><a href="#">
-          <img src="https://ibb.co/5LGb2HJ" alt="Lakme Cushion matte">
+          <img src="images/lakme-cushion-matte-lipstick-purple-diamond.jpg" alt="Lakme Cushion matte">
           
         <div class="detail"><h6>Lakme Cushion Matte Lipstick, Pink Unicorn, 4.5g</h6>
           <p class="rating"><strong>3.6 *</strong>
@@ -449,7 +464,7 @@ transition: background-color 300ms;} */
       <span>Save ₹45 (15% off)</span></p></div></a></div></div></li>
 
         <li><div class="item-detail"><div class="item-detail"><a href="#">
-          <img src="https://ibb.co/xDLyXqv" alt="Maybelline-liquid Lipstick">
+          <img src="images/liquidelipstick.jpg" alt="Maybelline-liquid Lipstick">
           
         <div class="detail"><h6>Maybelline New York Sensational Liquid Matte Lipstick 02, SoftWine, 7G</h6>
           <p class="rating"><strong>4.1 &star;</strong>
@@ -460,7 +475,7 @@ transition: background-color 300ms;} */
       <span>Save ₹180 (42% off)</span></p></div></a></div></div></li>
 
         <li><div class="item-detail"><div class="item-detail"><a href="#">
-          <img src="https://ibb.co/gw6m7gj" alt="mamaearth-ultra-light-indian-sunscreen">
+          <img src="images/mamaearth-ultra-light-indian-sunscreen.jpg" alt="mamaearth-ultra-light-indian-sunscreen">
           
         <div class="detail"><h6>Mamaearth Ultra Light Indian Sunscreen with Carrot Seed, Turmeric, and SPF 50 PA+++ for Sun Protection - 80g</h6>
           <p class="rating"><strong>4.3 &star;</strong>
@@ -471,7 +486,7 @@ transition: background-color 300ms;} */
       <span>Save ₹75 (15% off)</span></p></div></a></div></div></li>
 
         <li><div class="item-detail"><div class="item-detail"><a href="#">
-          <img src="https://ibb.co/6gZynTJ" alt="alps-goodness-rosemary-hair-spray">
+          <img src="images/alps-goodness-rosemary-hair-spray.png" alt="alps-goodness-rosemary-hair-spray">
           
         <div class="detail"><h6>alps-goodness-rosemary-hair-spray 300ml</h6>
           <p class="rating"><strong>4.2 &star</strong>
@@ -483,7 +498,7 @@ transition: background-color 300ms;} */
 
       <li>
         <div class="item-detail"><div class="item-detail"><a href="#">
-        <img src="https://ibb.co/09B8qH6" alt="Lakme lip tint">
+        <img src="images/lakme-lip-love-lip-and-cheek-tint-pretty-pink-1-8-g_.jpg" alt="Lakme lip tint">
         
       <div class="detail"><h6>Lakme lip love and cheek tint pretty pink 1.8g</h6>
         <p class="rating"><strong>4.3 &star</strong>
@@ -495,7 +510,7 @@ transition: background-color 300ms;} */
 
     <li>
       <div class="item-detail"><div class="item-detail"><a href="#">
-      <img src="https://ibb.co/1X3zHm4" alt="Lakme perfect radiance day cream">
+      <img src="images/lakme-perfect-radiance-brightening-day-cream-50g.jpg" alt="Lakme perfect radiance day cream">
       
     <div class="detail"><h6>Lakme perfect radiance brightening day cream 50g</h6>
       <p class="rating"><strong>4.0 &star</strong>
@@ -522,7 +537,7 @@ transition: background-color 300ms;} */
           <ul>
             <li>
               <div class="item-detail"><div class="item-detail"><a href="#">
-              <img src="https://ibb.co/RjKJg6x" alt="Lakme absolute matte">
+              <img src="images/lakme-absolute-beyond-matte-lip-401-orangeoasis-3-4gm.jpg" alt="Lakme absolute matte">
               
             <div class="detail"><h6>Lakme absolute beyond matte lip 401 orange oasis 3.4g</h6>
               <p class="rating"><strong>4.1 &star</strong>
@@ -534,7 +549,7 @@ transition: background-color 300ms;} */
 
           <li>
             <div class="item-detail"><div class="item-detail"><a href="#">
-            <img src="https://ibb.co/pdF8bvV" alt="Lakme eyeconic">
+            <img src="images/lakme-eyeconic-kajal-twin-pack-0-35gm.jpg" alt="Lakme eyeconic">
             
           <div class="detail"><h6>Lakme eyeconic kajal twin-pack 0-35gm</h6>
             <p class="rating"><strong>4.2 &star</strong>
@@ -547,7 +562,7 @@ transition: background-color 300ms;} */
   
           <li>
             <div class="item-detail"><div class="item-detail"><a href="#">
-            <img src="https://ibb.co/Jz1bMQF" alt="SUGAR-Mini-lipColor">
+            <img src="images/sugarlip.jpg" alt="SUGAR-Mini-lipColor">
             
           <div class="detail"><h6>SUGAR Cosmetics Smudge Me Not Liquid Mini Lipstick Set - Nude Set</h6>
             <p class="rating"><strong>4.4 *</strong>
@@ -558,7 +573,7 @@ transition: background-color 300ms;} */
         <span>Save ₹200 (20% off)</span></p></div></a></div></div></li>
   
           <li><div class="item-detail"><div class="item-detail"><a href="#">
-            <img src="https://ibb.co/tZdb1gD" alt="Lakme sunexpert Compact">
+            <img src="images/lakme-sun-expert-ultra-matte-spf-40-pa-compact-7-g-.jpg" alt="Lakme sunexpert Compact">
             
           <div class="detail"><h6><h6 _ngcontent-serverapp-c169="" class="mb-3 fw-semibold lh-base">Lakme Sun Expert Ultra Matte SPF 40 PA+++ Compact (7 g)</h6></h6>
             <p class="rating"><strong>4.3 &star;</strong>
@@ -569,7 +584,7 @@ transition: background-color 300ms;} */
         <span>Save ₹30 (10% off)</span></p></div></a></div></div></li>
   
           <li><div class="item-detail"><div class="item-detail"><a href="#">
-            <img src="https://ibb.co/FHpjb2j" alt="Lakme tinted Sunscreen">
+            <img src="images/lakme-sun-expert-tinted-sunscreen-spf-50-pa-broad-spectrum-uva-b-protection-blue-light-protection-no-white-cast-for-all-dry-oily-normal-skin-matte-finish-50gm_.jpg" alt="Lakme tinted Sunscreen">
             
           <div class="detail"><h6>Lakme Sun Expert Tinted Sunscreen SPF 50 PA +++ | Broad spectrum UVA/B protection | Blue light protection | No White Cast | for all dry, oily, normal skin| Matte Finish | 50gm</h6>
             <p class="rating"><strong>4.3 &star;</strong>
@@ -580,7 +595,7 @@ transition: background-color 300ms;} */
         <span>Save ₹164 (45% off)</span></p></div></a></div></div></li>
   
           <li><div class="item-detail"><div class="item-detail"><a href="#">
-            <img src="https://ibb.co/kg7cfKr" alt="NY-Bae-Loose-Powder">
+            <img src="images/ny-bae-banana-loose-powder.jpg" alt="NY-Bae-Loose-Powder">
             
           <div class="detail"><h6>NY Bae Banana Loose Powder (5.8 g) | Yellow | Matte Finish | Almond, Jojoba &amp; Sunflower Oils | Makeup Setting Powder | Long Lasting</h6>
             <p class="rating"><strong>4 &star;</strong>
@@ -642,16 +657,16 @@ transition: background-color 300ms;} */
 <!-- slide show -->
 <div class="carousel-inner   banner-slider">
   <div class="carousel-item active">
-    <img src="https://ibb.co/QYbRyss" alt="slideImage" width="100%" height="400px">
+    <img src="images/swiperImage4.jpg" alt="slideImage" width="100%" height="400px">
   </div>
   <div class="carousel-item">
-    <img src="https://ibb.co/FxQwWJf" alt="sliderImage" width="100%" height="400px">
+    <img src="images/banner2.jpg" alt="sliderImage" width="100%" height="400px">
   </div>
   <div class="carousel-item">
-    <img src="https://ibb.co/PgPghGP" alt="sliderImage" width="100%" height="400px">
+    <img src="images/banner3.jpg" alt="sliderImage" width="100%" height="400px">
   </div>
   <div class="carousel-item ">
-    <img src="https://ibb.co/LdHN75T" alt="slideImage" width="100%" height="400px">
+    <img src="images/banner1.png" alt="slideImage" width="100%" height="400px">
   </div>
 
 
@@ -717,7 +732,7 @@ transition: background-color 300ms;} */
 
       <li>
         <div class="item-detail"><div class="item-detail"><a href="#">
-        <img src="https://ibb.co/5LGb2HJ" alt="Lakme lakme-cushion-matte-lipstick-purple-diamond">
+        <img src="images/lakme-cushion-matte-lipstick-purple-diamond.jpg" alt="Lakme lakme-cushion-matte-lipstick-purple-diamond">
         
       <div class="detail"><h6>Lakme Cushion Matte Lipstick, Pink Unicorn, 4.5g</h6>
         <p class="rating"><strong>3.6 *</strong>
@@ -728,7 +743,7 @@ transition: background-color 300ms;} */
     <span>Save ₹45 (15% off)</span></p></div></a></div></div></li>
 
       <li><div class="item-detail"><div class="item-detail"><a href="#">
-        <img src="https://ibb.co/xDLyXqv" alt="Maybelline liquidelipstick">
+        <img src="images/liquidelipstick.jpg" alt="Maybelline liquidelipstick">
         
       <div class="detail"><h6>Maybelline New York Sensational Liquid Matte Lipstick 02, SoftWine, 7G</h6>
         <p class="rating"><strong>4.1 &star;</strong>
@@ -739,7 +754,7 @@ transition: background-color 300ms;} */
     <span>Save ₹180 (42% off)</span></p></div></a></div></div></li>
 
       <li><div class="item-detail"><div class="item-detail"><a href="#">
-        <img src="https://ibb.co/gw6m7gj" alt="mamaearth-ultra-light-indian-sunscreen">
+        <img src="images/mamaearth-ultra-light-indian-sunscreen.jpg" alt="mamaearth-ultra-light-indian-sunscreen">
         
       <div class="detail"><h6>Mamaearth Ultra Light Indian Sunscreen with Carrot Seed, Turmeric, and SPF 50 PA+++ for Sun Protection - 80g</h6>
         <p class="rating"><strong>4.3 &star;</strong>
@@ -750,7 +765,7 @@ transition: background-color 300ms;} */
     <span>Save ₹75 (15% off)</span></p></div></a></div></div></li>
 
       <li><div class="item-detail"><div class="item-detail"><a href="#">
-        <img src="https://ibb.co/6gZynTJ" alt="alps-goodness-rosemary-hair-spray">
+        <img src="images/alps-goodness-rosemary-hair-spray.png" alt="alps-goodness-rosemary-hair-spray">
         
       <div class="detail"><h6>alps-goodness-rosemary-hair-spray 300ml</h6>
         <p class="rating"><strong>4.2 &star</strong>
@@ -762,7 +777,7 @@ transition: background-color 300ms;} */
 
     <li>
       <div class="item-detail"><div class="item-detail"><a href="#">
-      <img src="https://ibb.co/09B8qH6" alt="Lakme-Lip-Tint">
+      <img src="images/lakme-lip-love-lip-and-cheek-tint-pretty-pink-1-8-g_.jpg" alt="Lakme-Lip-Tint">
       
     <div class="detail"><h6>Lakme lip love and cheek tint pretty pink 1.8g</h6>
       <p class="rating"><strong>4.3 &star</strong>
@@ -774,7 +789,7 @@ transition: background-color 300ms;} */
 
   <li>
     <div class="item-detail"><div class="item-detail"><a href="#">
-    <img src="https://ibb.co/1X3zHm4" alt="Lakme-perfect-Radiance-Day-Cream">
+    <img src="images/lakme-perfect-radiance-brightening-day-cream-50g.jpg" alt="Lakme-perfect-Radiance-Day-Cream">
     
   <div class="detail"><h6>Lakme perfect radiance brightening day cream 50g</h6>
     <p class="rating"><strong>4.0 &star</strong>
@@ -828,16 +843,16 @@ transition: background-color 300ms;} */
   <!-- slide show -->
   <div class="carousel-inner   banner-slider">
     <div class="carousel-item active">
-      <img src="https://ibb.co/GHZdkYT" alt="slideImage" width="500px" height="400px">
+      <img src="images/swiperImage.jpg" alt="slideImage" width="500px" height="400px">
     </div>
     <div class="carousel-item">
-      <img src="https://ibb.co/qC9p7RC" alt="sliderImage" width="500px" height="400px">
+      <img src="images/swiperImage2.jpg" alt="sliderImage" width="500px" height="400px">
     </div>
     <div class="carousel-item">
-    <img src="https://ibb.co/9bt88gN" alt="banner3"  width="500px" >
+    <img src="images/swiperImage3.jpg" alt="banner3"  width="500px" >
     </div>
     <div class="carousel-item ">
-      <img src="https://ibb.co/9bcRrsW" alt="slideImage" width="500px" height="400px">
+      <img src="images/swiperImage4.jpg" alt="slideImage" width="500px" height="400px">
     </div>
   
   
@@ -879,7 +894,7 @@ transition: background-color 300ms;} */
 <div class="last-banner">
 
   <div class="shop-now">
-    <img src="https://ibb.co/482SqjL" alt="shop-now">
+    <img src="images/shop-now.jpg" alt="shop-now">
   </div>
 </div>
 <!-- end shop-now banner -->
@@ -888,7 +903,7 @@ transition: background-color 300ms;} */
 <!-- services -->
 <div class="services-wrapper">
   <div class="services">
-    <img src="https://ibb.co/jDbtmw3" alt="services">
+    <img src="images/services.jpg" alt="services">
   </div>
 </div>
 
@@ -896,7 +911,7 @@ transition: background-color 300ms;} */
 <!-- warning msg -->
 <div class="warning-wrapper">
   <div class="warning-msg ">
-    <img src="https://ibb.co/9pS0yXL" alt="warning-msg">
+    <img src="images/warning-msg.jpg" alt="warning-msg">
   </div>
 </div>
 
@@ -913,19 +928,19 @@ transition: background-color 300ms;} */
 
 
     <div class="secure-payment col-12 col-md-4 col-lg-4 ng-star-inserted">
-     <a href="#"> <img src="https://ibb.co/b5dDt6Y" alt="secure-payment">
+     <a href="#"> <img src="images/secure-payment.jpg" alt="secure-payment">
       <h5>Secure payments</h5>
    <p> <span>All major credit & debit cards accepted</span></p></a>
       
     </div>
 
     <div class="beauty-assistance   col-12 col-md-4 col-lg-4 ng-star-inserted">
-      <a href="#"><a href="https://imgbb.com/"><img src="https://i.ibb.co/TkG4nPb/beauty-assistant.webp" alt="beauty-assistant" border="0" /></a>
+      <a href="#"><a href="#"><img src="images/beauty-assistant.jpg" alt="beauty-assistant" /></a>
         <h5>Beauty Assistance</h5>
      <p> <span>Tell me what you are looking for and i will work my magic to help you find your perfect match.</span></p></a>
     </div>
 
-    <div class="help-center   col-12 col-md-4 col-lg-4 ng-star-inserted"> <a href="#"> <img src="https://ibb.co/52v3XCP" alt="help-center">
+    <div class="help-center   col-12 col-md-4 col-lg-4 ng-star-inserted"> <a href="#"> <img src="images/help-center.jpg" alt="help-center">
       <h5>Help Center</h5>
    <p> <span>Got a question? Look no further. Browse FAQs or submit your query.</span></p></a></div>
   </div>
@@ -959,7 +974,7 @@ transition: background-color 300ms;} */
         <div class="spotlight">
           <h5 class="mt-0 mb-3 mb-lg-4 fs-bold">Shop on the go</h5>
           <a href="" target="_blank" href="https://dl.purplle.com/xLJmQCwBwN">
-          <img src="https://ibb.co/nMbpqRc" alt="download-App" border="0" />
+          <img src="images/downloadApp.jpg" alt="download-App" border="0" />
           </a>
         </div>
       </div>
@@ -1223,9 +1238,9 @@ transition: background-color 300ms;} */
 
     <div class="row d-flex">
       <div class="col-12 col-md-6">
-        <div class="d-flex gap-4 align-items-center justify-content-center" style="height:30px; width= 300">
-       <h6 class="m-0 mr-1 px-3 fw-bold f-grey " style="font-size: 30px;" >Payment</h6>
-       <img src="https://ibb.co/9p8krVR" class="mw-100 h-auto" alt="payment-option" height="27" width="300" loading="lazy">
+        <div class="d-flex gap-4 align-items-center justify-content-center">
+       <h6 class="m-0 mr-1 px-3 fw-bold f-grey " style="font-size: 20px;" >Payment</h6>
+       <img src="images/payments1.jpg" class="mw-100 h-auto" alt="payment-option" height="27" width="300" loading="lazy">
 
 
         </div>
@@ -1233,49 +1248,49 @@ transition: background-color 300ms;} */
 
 <div class="col-12 col-md-6">
   <div class="d-flex gap-4 align-items-center justify-content-center">
-    <h6 class="m-0 mr-1 px-2 fw-bold f-grey" style="font-size: 30px;">Connect</h6>
+    <h6 class="m-0 mr-1 px-2 fw-bold f-grey" style="font-size: 20px;">Connect</h6>
     <div class="social-links d-flex gap-2">
       <a href="http://www.facebook.com/letspurplle" title="facebook" target="_blank" >
       
-        <i class="ri-facebook-circle-fill facebook-circle-fill p-facebook" style="font-size: 35px; "></i>
+        <i class="ri-facebook-circle-fill facebook-circle-fill p-facebook" style="font-size: 25px; "></i>
       
       </a>
 
       <a href="http://twitter.com/letspurplle"  title="twitter" target="_blank" >
       
-        <i class="ri-twitter-x-line p-social-twitter" style="font-size: 35px;"></i>
+        <i class="ri-twitter-x-line p-social-twitter" style="font-size: 25px;"></i>
       
       </a>
 
       <a href="http://plus.googal.com/+purplle" title="Googal+" target="_blank" >
       
-        <i class="ri-google-fill" style=" font-size: 35px;"></i>
+        <i class="ri-google-fill" style=" font-size: 25px;"></i>
       
       </a>
 
       <a href="http://in.printerest.com/letspurplle" title="pinterest" target="_blank" >
       
-        <i class="ri-pinterest-line " style="font-size: 35px;"></i>
+        <i class="ri-pinterest-line " style="font-size: 25px;"></i>
       </a>
       <a href="mailto:customercare@purplle.com" title="Mail" target="_blank" >
       
-        <i class="ri-mail-fill" style="font-size: 35px;"></i>
+        <i class="ri-mail-fill" style="font-size: 25px;"></i>
       
       </a>
       <a href="https://www.youtube.com/channel/UCI_6AcJI1sKexCLb2NAYTOQ" title="Youtube" target="_blank" >
       
-        <i class="ri-youtube-fill" style="font-size: 35px;"></i>
+        <i class="ri-youtube-fill" style="font-size: 25px;"></i>
       
       </a>
       
       <a href="https://www.instagram.com/letspurplle/" title="Instagram" target="_blank" >
       
-        <i class="ri-instagram-fill" style="font-size: 35px;"></i>
+        <i class="ri-instagram-fill" style="font-size: 25px;"></i>
       
       </a>
       <a href="https://www.linkedin.com/company/purplle-com" title="Linkedin" target="_blank" >
       
-        <i class="ri-linkedin-box-fill" style="font-size: 35px;"></i>
+        <i class="ri-linkedin-box-fill" style="font-size: 25px;"></i>
       
       </a>
       
@@ -1302,4 +1317,11 @@ transition: background-color 300ms;} */
 
         <!-- MAIN WRAPPER CONTAINER END -->
     </body>
+
+
+<script>
+  Window.onload=loadCupon();
+</script>
+  
+    
 </html>
